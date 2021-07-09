@@ -1,0 +1,24 @@
+h3 {
+  text-transform: uppercase;
+}
+// стилизация абзацев в html
+.list-subjec {
+  width: 270px;
+}
+
+.list-text .list-subjec + .list-subjec {
+  margin-left: 30px;
+}
+
+.text-subjec {
+  margin: 10px 0px 0px 0px;
+  line-height: 1.71;
+}
+// стилизация h2 h3
+.subjec {
+  font-weight: var(--font-weight-bold);
+  line-height: 1.17;
+  margin-bottom: 20px;
+  margin: 0px;
+  color: var(--secondary-text-color);
+}

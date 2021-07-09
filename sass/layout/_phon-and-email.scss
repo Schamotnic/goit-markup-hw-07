@@ -1,0 +1,70 @@
+// стилизация телефона и почты в хедере и футере
+.icon,
+.icon-one {
+  fill: #757575;
+  margin: 0px;
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.link-post {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  padding: 0px;
+}
+
+.link-telephon-footer:focus,
+.link-telephon-footer:hover {
+  color: var(--accent);
+}
+
+.link-mail-footer:focus,
+.link-mail-footer:hover {
+  color: var(--accent);
+}
+
+.link-telephon-footer {
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+  line-height: 1.71;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-mail-footer {
+  margin-bottom: 9px;
+  display: block;
+  padding: 0px;
+  text-decoration: none;
+  line-height: 1.71;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-telephon {
+  margin-left: 50px;
+}
+.link-contact {
+  align-items: center;
+  display: flex;
+  padding: 32px 0px;
+  font-style: normal;
+  color: var(--main-colors-text);
+  text-decoration: none;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-contact:focus,
+.link-contact:hover {
+  color: var(--accent);
+}

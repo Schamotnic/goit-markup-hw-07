@@ -1,0 +1,78 @@
+// стилизация футера
+.address {
+  display: flex;
+  align-items: baseline;
+}
+
+.box-web-foter {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.studio {
+  color: #ffffff;
+  margin: 0px;
+  display: block;
+}
+
+.address-box {
+  margin: 0px;
+  display: block;
+  margin-bottom: 9px;
+  font-style: normal;
+  color: var(--white-color-text);
+  text-decoration: none;
+}
+
+.footer-address {
+  background-color: var(--secondary-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.link-footer {
+  list-style: none;
+  padding: 0;
+  margin: 0px;
+}
+.item-mail {
+  margin-bottom: 9px;
+}
+// стилизация отправной формы в футере
+.send-email {
+  width: 358px;
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding: 15px 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: 12px;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.send-lable {
+  display: block;
+  margin-bottom: 20px;
+  font-family: Roboto;
+  font-weight: var(--font-weight-bold);
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: var(--white-color-text);
+}
+
+.div-to-form {
+  display: flex;
+}
+
+.icon-send {
+  display: flex;
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.box-for-send {
+  margin-left: auto;
+  display: flex;
+}

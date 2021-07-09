@@ -1,0 +1,150 @@
+// button to navidation
+.list-button {
+  margin: 0px 0px;
+  display: flex;
+  padding: 0px;
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  list-style-type: none;
+}
+// стили кнопки заказать услугу
+.btn {
+  padding: 10px 32px;
+  margin: auto;
+  border: 0px;
+  display: block;
+  border-radius: 4px;
+  color: var(--white-color-text);
+  background-color: var(--accent);
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.87;
+  width: 200px;
+  height: 50px;
+}
+
+// кнопка отправки формы в футере
+.send-btn {
+  position: relative;
+  font-weight: var(--font-weight-bold);
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: var(--border-radius);
+  color: var(--white-color-text);
+  background-color: var(--accent);
+  padding: 10px 28px 10px 29px;
+  align-items: center;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.send-btn:focus,
+.send-btn:hover {
+  border: solid 1px;
+  color: var(--white-color-text);
+}
+
+//кнопка отправки формы модального окна
+.btn-chek {
+  border: 0px;
+  display: block;
+  margin: auto;
+  padding: 10px 55px 10px 56px;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: var(--white-color-text);
+  cursor: pointer;
+  transition: background-color var(--transition-duration) var(--timing-function),
+    box-shadowvar var(--transition-duration) var(--timing-function);
+}
+
+.btn-chek:hover,
+.btn-chek:focus {
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+// кнопки в портфолио
+.list-button {
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.pagination {
+  text-align: center;
+  padding: 6px 22px;
+  display: inline-block;
+  border: 0px;
+  color: var(--secondary-text-color);
+  background-color: var(--third-background-color);
+  left: 576px;
+  top: 174px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.list-pagination {
+  text-align: center;
+  min-width: 73px;
+  height: 38px;
+  border-radius: 4px;
+  padding: 6px 22px;
+  color: #ffffff;
+  background-color: var(--accent);
+  border: 0px;
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.website-btn > .pagination {
+  min-width: 128px;
+  height: 38px;
+}
+
+.application-btn > .pagination {
+  display: inline-block;
+  min-width: 145px;
+  height: 38px;
+}
+
+.application > .pagination {
+  display: inline-block;
+  min-width: 145px;
+  height: 38px;
+}
+
+.design-bnt > .pagination {
+  display: inline-block;
+  min-width: 103px;
+  height: 38px;
+}
+
+.marketing-btn > .pagination {
+  display: inline-block;
+  min-width: 130px;
+  height: 38px;
+}
+
+.pagination:focus,
+.pagination:hover {
+  color: var(--white-color-text);
+  background-color: var(--accent);
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}

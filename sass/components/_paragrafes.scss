@@ -1,0 +1,27 @@
+// стилизация параграфов с иконками
+.subjec-box {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.list-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.text-subjec {
+  font-style: normal;
+  font-weight: normal;
+
+  line-height: 1.71;
+  margin-top: 0;
+  margin-bottom: 0;
+  letter-spacing: 0.03em;
+}

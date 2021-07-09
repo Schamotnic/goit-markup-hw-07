@@ -1,0 +1,101 @@
+// стилизация социальных иконок в нашей команде
+
+// div
+.thumba-team {
+  padding: 30px;
+  background-color: var(--white-color-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+// ul
+.demyanenko {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+//  li
+.social-icon-list {
+  border-radius: 50%;
+}
+// <a>
+.social-icon:focus {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+.social-icon {
+  border-radius: 50%;
+  display: flex;
+  height: 44px;
+  width: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-icon:hover {
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+//   svg
+.social-icon-team {
+  fill: currentColor;
+}
+
+// стилиация социконок в футере
+// div
+.us-icons {
+  display: inline-block;
+}
+//   <p>
+.join {
+  color: var(--white-color-text);
+  font-weight: var(--font-weight-bold);
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  margin: 0px 0px 20px 0px;
+  padding: 0px;
+}
+
+//ul
+.join-us {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+// li
+.join-us .us-icons-join + .us-icons-join {
+  margin-left: 10px;
+}
+.us-icons-join {
+  border-radius: 50%;
+}
+// <a>
+.join-us-icon {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.join-us-icon:hover {
+  background-color: var(--accent);
+}
+
+.join-us-icon:focus {
+  background-color: var(--accent);
+}
+// svg
+.join-us-foter {
+  fill: currentColor;
+}

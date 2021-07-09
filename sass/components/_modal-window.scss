@@ -1,0 +1,121 @@
+// стилизация модального окна
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000033;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  min-width: 528px;
+  min-height: 581px;
+  transform: translate3d(-50%, -50%, 0) scale(1) rotate3d(0, 0, 0, 0);
+  transition: transform calc(1.5 * var(--transition-duration))
+    var(--timing-function);
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate3d(-50%, -50%, 0) scale(1.2) rotate3d(0, -20, 0, 90deg);
+}
+
+.modal-close-btn {
+  right: 8px;
+  top: 8px;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  margin-left: auto;
+  padding: 0;
+
+  border-radius: 50%;
+  color: black;
+  transition: color var(--transition-duration) var(--timing-function);
+  background-color: var(--background-prime-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  cursor: pointer;
+  fill: var(--accent);
+}
+
+.title-to-modal {
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--secondary-text-color);
+  margin-bottom: 12px;
+}
+.lable-to-form {
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.input-to-form {
+  width: 100%;
+  padding: 12px 0 12px 42px;
+  margin-top: 4px;
+  font-size: 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: var(--border-radius);
+  transition: border-color var(--transition-duration) var(--timing-function);
+}
+.icon-to-input {
+  position: absolute;
+  transform: translateY(-50%);
+  left: 15px;
+  bottom: 4px;
+  transition: fill var(--transition-duration) var(--timing-function);
+}
+.lable-to-textarea {
+  margin-bottom: 20px;
+  display: block;
+}
+
+.input-to-form:hover + .icon-to-input,
+.input-to-form:focus + .icon-to-input {
+  fill: var(--accent);
+}
+
+.input-to-form:focus,
+.input-to-form:hover {
+  border-color: var(--accent);
+}
+//    стилизация коментария
+
+.comment {
+  width: 100%;
+  display: block;
+  padding: 12px 16px;
+  margin-top: 4px;
+  border-radius: var(--border-radius);
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transition: border-color var(--transition-duration) var(--timing-function);
+}
+.comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.comment:focus,
+.comment:hover {
+  border-color: var(--accent);
+}

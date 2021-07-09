@@ -1,0 +1,30 @@
+// logo in heder and footer
+
+.logo {
+  padding-bottom: 25px;
+  padding-top: 24px;
+  margin-right: 93px;
+  color: #000000;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.address > a {
+  color: var(--white-color-text);
+}
+
+.logo-accent {
+  color: var(--accent);
+}
+.logo-footer {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  line-height: 1.2;
+}

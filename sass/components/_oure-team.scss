@@ -1,0 +1,46 @@
+// стилизация секции наша команда
+.subject-h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+  line-height: 1.16;
+  margin: 0px 0px 50px 0px;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+
+.subject-h3 {
+  text-transform: none;
+  margin: 0px 0px 10px 0px;
+  color: var(--secondary-text-color);
+  font-weight: var(--font-weight-medium);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.text-p {
+  padding: 0px;
+  margin: 0px 0px 16px 0px;
+  color: var(--main-colors-text);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.team .person + .person {
+  margin-left: 30px;
+}
+
+.our-team {
+  background-color: var(--third-background-color);
+}
+.subject-h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
