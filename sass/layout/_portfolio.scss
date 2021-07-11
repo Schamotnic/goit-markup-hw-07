@@ -5,6 +5,11 @@
   text-decoration: none;
   color: inherit;
   transition: box-shadow var(--transition-duration) var(--timing-function);
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .list-card {
@@ -20,12 +25,11 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style-type: none;
-}
-
-.list-card > .card {
-  margin-left: 30px;
-  margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+  &__card {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
 }
 
 .list {
@@ -48,8 +52,8 @@
 
 .caption {
   margin: 0px 0px 4px 0px;
-  color: var(--secondary-text-color);
-  font-weight: var(--font-weight-bold);
+  color: $secondary-text-color;
+  font-weight: $font-weight-bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -76,21 +80,11 @@
   padding: 24px;
   font-size: 18px;
   line-height: 1.556;
-  background-color: var(--accent);
-  color: var(--white-color-text);
+  background-color: $accent;
+  color: $white-color-text;
   transition: transform var(--transition-duration) var(--timing-function);
-}
-.card-link:hover .overlay-text,
-.card-link:focus .overlay-text {
-  transform: translate3d(0, -100%, 0);
-}
-
-// добавление теней карточкам в портфолио
-.card-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.card-link:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  .card-link:hover &,
+  .card-link:focus & {
+    transform: translate3d(0, -100%, 0);
+  }
 }

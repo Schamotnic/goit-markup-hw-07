@@ -1,18 +1,18 @@
 // стилизация секции наша команда
 .subject-h2 {
-  font-weight: var(--font-weight-bold);
+  font-weight: $font-weight-bold;
   font-size: 36px;
   line-height: 1.16;
   margin: 0px 0px 50px 0px;
   text-align: center;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }
 
 .subject-h3 {
   text-transform: none;
   margin: 0px 0px 10px 0px;
-  color: var(--secondary-text-color);
-  font-weight: var(--font-weight-medium);
+  color: $secondary-text-color;
+  font-weight: $font-weight-medium;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -21,7 +21,7 @@
 .text-p {
   padding: 0px;
   margin: 0px 0px 16px 0px;
-  color: var(--main-colors-text);
+  color: $main-colors-text;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -37,10 +37,10 @@
 }
 
 .our-team {
-  background-color: var(--third-background-color);
+  background-color: $third-background-color;
 }
 .subject-h2 {
   margin-bottom: 50px;
   text-align: center;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }

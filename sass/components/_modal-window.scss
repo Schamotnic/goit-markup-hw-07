@@ -9,7 +9,7 @@
   background-color: #00000033;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop.is-hidden {
+.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -46,22 +46,21 @@
   border-radius: 50%;
   color: black;
   transition: color var(--transition-duration) var(--timing-function);
-  background-color: var(--background-prime-color);
+  background-color: $background-prime-color;
   border: 1px solid rgba(0, 0, 0, 0.1);
-}
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  cursor: pointer;
-  fill: var(--accent);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: $accent;
+  }
 }
 
 .title-to-modal {
-  font-weight: var(--font-weight-bold);
+  font-weight: $font-weight-bold;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
   margin-bottom: 12px;
 }
 .lable-to-form {
@@ -78,6 +77,14 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: var(--border-radius);
   transition: border-color var(--transition-duration) var(--timing-function);
+  &:hover + .icon-to-input,
+  &:focus + .icon-to-input {
+    fill: $accent;
+  }
+  &:focus,
+  &:hover {
+    border-color: $accent;
+  }
 }
 .icon-to-input {
   position: absolute;
@@ -91,15 +98,6 @@
   display: block;
 }
 
-.input-to-form:hover + .icon-to-input,
-.input-to-form:focus + .icon-to-input {
-  fill: var(--accent);
-}
-
-.input-to-form:focus,
-.input-to-form:hover {
-  border-color: var(--accent);
-}
 //    стилизация коментария
 
 .comment {
@@ -107,15 +105,15 @@
   display: block;
   padding: 12px 16px;
   margin-top: 4px;
-  border-radius: var(--border-radius);
+  border-radius: &border-radius;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition: border-color var(--transition-duration) var(--timing-function);
-}
-.comment::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-}
-.comment:focus,
-.comment:hover {
-  border-color: var(--accent);
+  &::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus,
+  &:hover {
+    border-color: $accent;
+  }
 }

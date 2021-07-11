@@ -19,21 +19,21 @@
 .icon-check {
   margin-right: 8.38px;
   border-radius: 2px;
-  fill: var(--white-color-text);
+  fill: $white-color-text;
   border: 1px solid rgba(33, 33, 33, 0.2);
   background-origin: border-box;
-  transition: background-color var(--transition-duration) var(--timing-function),
-    border var(--transition-duration) var(--timing-function);
+  transition: background-color $transition-duration $timing-function,
+    border $transition-duration $timing-function;
 }
 .chek-input:focus + .icon-check,
 .chek-input:hover + .icon-check {
-  border-color: var(--accent);
+  border-color: $accent;
 }
 
 .chek-input:checked + .icon-check {
-  background-color: var(--accent);
+  background-color: $accent;
 }
 
 .link-chek {
-  color: var(--accent);
+  color: $accent;
 }

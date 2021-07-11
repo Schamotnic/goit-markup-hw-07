@@ -20,12 +20,12 @@
   display: block;
   margin-bottom: 9px;
   font-style: normal;
-  color: var(--white-color-text);
+  color: $white-color-text;
   text-decoration: none;
 }
 
 .footer-address {
-  background-color: var(--secondary-background-color);
+  background-color: $secondary-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -56,10 +56,10 @@
   display: block;
   margin-bottom: 20px;
   font-family: Roboto;
-  font-weight: var(--font-weight-bold);
+  font-weight: $font-weight-bold;
   line-height: 1.4;
   text-transform: uppercase;
-  color: var(--white-color-text);
+  color: $white-color-text;
 }
 
 .div-to-form {

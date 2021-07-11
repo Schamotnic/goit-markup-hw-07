@@ -11,13 +11,14 @@
   line-height: 1.2;
 }
 
-.address > a {
-  color: var(--white-color-text);
+.address__a {
+  color: $white-color-text;
 }
 
 .logo-accent {
-  color: var(--accent);
+  color: $accent;
 }
+
 .logo-footer {
   display: block;
   color: #ffffff;

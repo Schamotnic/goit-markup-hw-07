@@ -16,9 +16,9 @@ h3 {
 }
 // стилизация h2 h3
 .subjec {
-  font-weight: var(--font-weight-bold);
+  font-weight: $font-weight-bold;
   line-height: 1.17;
   margin-bottom: 20px;
   margin: 0px;
-  color: var(--secondary-text-color);
+  color: $secondary-text-color;
 }

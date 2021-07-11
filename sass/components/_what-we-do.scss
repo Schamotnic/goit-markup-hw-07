@@ -14,8 +14,8 @@
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  background-color: var(--background-opacity);
-  color: var(--white-color-text);
+  background-color: $background-opacity;
+  color: $white-color-text;
 }
 
 .list .pictures {
