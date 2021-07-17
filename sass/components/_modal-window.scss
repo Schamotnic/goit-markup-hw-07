@@ -46,7 +46,7 @@
   border-radius: 50%;
   color: black;
   transition: color var(--transition-duration) var(--timing-function);
-  background-color: $background-prime-color;
+  background-color: $white-color-text;
   border: 1px solid rgba(0, 0, 0, 0.1);
   &:hover,
   &:focus {

@@ -25,15 +25,19 @@
   transition: background-color $transition-duration $timing-function,
     border $transition-duration $timing-function;
 }
-.chek-input:focus + .icon-check,
-.chek-input:hover + .icon-check {
-  border-color: $accent;
-}
 
-.chek-input:checked + .icon-check {
-  background-color: $accent;
-}
+.chek-input {
+  appearance: none;
 
+  &:focus + .icon-check,
+  &:hover + .icon-check {
+    border-color: $accent;
+  }
+
+  &:checked + .icon-check {
+    background-color: $accent;
+  }
+}
 .link-chek {
   color: $accent;
 }
